@@ -4,8 +4,10 @@ const bodyParser = require('body-parser');
 require("dotenv").config();
 
 const server = express();
+server.use(cors())
 server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({ extended: true }));
+
 const PORT = process.env.PORT || 4848;
 
 const transporter = nodemailer.createTransport({
