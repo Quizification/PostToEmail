@@ -1,0 +1,31 @@
+{
+  "name": "posttoemail",
+  "version": "1.0.0",
+  "description": "Server for sending http form inquiries to an email",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quizification/PostToEmail.git"
+  },
+  "keywords": [
+    "send",
+    "email",
+    "by",
+    "post",
+    "message",
+    "nodejs",
+    "email"
+  ],
+  "author": "Robin Schleser, CTO Stacklex",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Quizification/PostToEmail/issues"
+  },
+  "homepage": "https://github.com/Quizification/PostToEmail#readme",
+  "dependencies": {
+    "nodemailer": "^6.7.2"
+  }
+}
