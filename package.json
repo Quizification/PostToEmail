@@ -4,7 +4,8 @@
   "description": "Server for sending http form inquiries to an email",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "start": "node ."
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,9 @@
   },
   "homepage": "https://github.com/Quizification/PostToEmail#readme",
   "dependencies": {
+    "body-parser": "^1.19.2",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
     "nodemailer": "^6.7.2"
   }
 }
