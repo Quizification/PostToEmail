@@ -37,12 +37,12 @@ server.post('/', (req, res) => {
     subject: 'New Inquiry',
     text: `${req.body.name}
     ${req.body.email}
-    ${req.body.message} & ${req.body.data}`,
+    ${req.body.message} & ${JSON.stringify(req.body.data)}`,
     html: `<h1>New Inquiry</h1>
     <p>${req.body.name}</p>
     <p>${req.body.email}</p>
-    <p>${req.body.data}</p>
-    <pre>${req.body.message}</pre>`,
+    <p>${req.body.message}</p>
+    <pre>${JSON.stringify(req.body.data)}</pre>`,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
