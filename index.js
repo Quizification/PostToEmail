@@ -1,9 +1,11 @@
 const nodemailer = require('nodemailer');
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors')
 require("dotenv").config();
 
 const server = express();
+
 server.use(cors())
 server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({ extended: true }));
