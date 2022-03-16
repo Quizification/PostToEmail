@@ -7,8 +7,8 @@ require("dotenv").config();
 const server = express();
 
 server.use(cors())
-server.use(bodyParser.json());
-server.use(bodyParser.urlencoded({ extended: true }));
+server.use(bodyParser.json({ limit: '50mb' }));
+server.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
 
 const PORT = process.env.PORT || 4848;
 
